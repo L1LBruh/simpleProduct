@@ -4,11 +4,11 @@ import java.text.ParseException;
 import java.util.Calendar;
 
 public class Milk extends Product{
-    String itemType;
+    String milkType;
     boolean isOpen;
-    public Milk(String name, String date, String itemType,boolean isOpen) throws ParseException {
+    public Milk(String name, String date, String milkType,boolean isOpen) throws ParseException {
         super(name, date);
-        this.itemType=itemType;
+        this.milkType=milkType;
         this.isOpen=isOpen;
         status();
     }
@@ -16,7 +16,7 @@ public class Milk extends Product{
         Calendar newDate = Calendar.getInstance();
         if(isOpen)
         {
-            switch (itemType.toLowerCase()) {
+            switch (milkType.toLowerCase()) {
                 case "pasteurized" -> {
                     newDate.add(Calendar.DATE, 2);
                     this.date = newDate.getTime();
@@ -35,5 +35,9 @@ public class Milk extends Product{
     public void isOpen(boolean isOpen){
         this.isOpen=isOpen;
         status();
+    }
+    public void writeProduct()
+    {
+        System.out.print("Name:" + name + "  Date:" + date + "  isNormal:"+ isNormal+ "  isInside:"+ isInside+ "  Milk Type: "+ milkType.toLowerCase()+"\n");
     }
 }

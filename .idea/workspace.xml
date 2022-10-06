@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ffc5a04-31e7-47bf-ad43-16b35611b85d" name="Changes" comment="simple_code_one">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Milk.java" afterDir="false" />
+    <list default="true" id="5ffc5a04-31e7-47bf-ad43-16b35611b85d" name="Changes" comment="simple_code_two">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Cheese.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Milk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Milk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/refrigerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/refrigerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665009527842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="simple_code_two">
+      <created>1665066519574</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665066519574</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simple_code_one" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple_code_one" />
+    <MESSAGE value="simple_code_two" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple_code_two" />
   </component>
 </project>

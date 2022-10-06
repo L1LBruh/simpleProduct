@@ -26,6 +26,13 @@ public class refrigerator {
         name.isInside=false;
         name.writeProduct();
     }
+    public void takeProduct(Cheese name)
+    {
+        this.productList.add(name);
+        name.isOpen(true);
+        name.isInside=false;
+        name.writeProduct();
+    }
     public void putProduct(Product name)
     {
         this.productList.remove(name);
