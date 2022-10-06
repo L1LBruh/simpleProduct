@@ -4,26 +4,32 @@ import java.util.ArrayList;
 
 
 public class refrigerator {
-    ArrayList<product> productList = new ArrayList<>();
-    public refrigerator(ArrayList<product> productList)
+    ArrayList<Product> productList;
+    public refrigerator(ArrayList<Product> productList)
     {
         this.productList=productList;
-        for (product products:productList) {
-            System.out.println(products);
+        for (Product product:productList) {
+            product.isInside =true;
+            product.writeProduct();
         }
     }
-    public void takeProduct(product name)
+    public void takeProduct(Product name)
     {
         this.productList.add(name);
-        for (product products:productList) {
-            System.out.println(products);
-        }
+        name.isInside=false;
+        name.writeProduct();
     }
-    public void putProduct(product name)
+    public void takeProduct(Milk name)
+    {
+        this.productList.add(name);
+        name.isOpen(true);
+        name.isInside=false;
+        name.writeProduct();
+    }
+    public void putProduct(Product name)
     {
         this.productList.remove(name);
-        for (product products:productList) {
-            System.out.println(products);
-        }
+        name.isInside=true;
+        name.writeProduct();
     }
 }

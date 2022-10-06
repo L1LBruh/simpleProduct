@@ -3,18 +3,20 @@ package org.example;
 import javax.xml.crypto.Data;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
-
-        product chees = new product("Chees","10-10-2022");
-        product blueChees = new product("BlueChees","05-10-2022");
-        product bread = new product("Bread","02-10-2022");
-        ArrayList<product> products=new ArrayList<>();
-        refrigerator firstRef=new refrigerator(products);
-        firstRef.putProduct(chees);
-        firstRef.putProduct(blueChees);
-        firstRef.putProduct(bread);
-        firstRef.takeProduct(blueChees);
+        Product cheese = new Product("Cheese","10-10-2022");
+        Product blueCheese = new Product("BlueCheese","05-10-2022");
+        Product bread = new Product("Bread","02-10-2022");
+        Milk niceMilk = new Milk("NiceMilk","8-10-2022","Pasteurized",false);
+        Milk coolMilk = new Milk("CoolMilk","7-10-2022","fermented", false);
+        ArrayList<Product> refrigeratorProducts=new ArrayList<>(Arrays.asList(cheese,blueCheese,bread,niceMilk,coolMilk));
+        refrigerator firstRef=new refrigerator(refrigeratorProducts);
+        firstRef.takeProduct(blueCheese);
+        firstRef.putProduct(blueCheese);
+        firstRef.takeProduct(coolMilk);
+        firstRef.putProduct(coolMilk);
     }
 }
